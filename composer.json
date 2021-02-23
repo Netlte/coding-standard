@@ -1,0 +1,23 @@
+{
+  "name": "netlte/coding-standard",
+  "description": "Meta-package to define coding standard for project",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/Netlte/coding-standard",
+  "authors": [
+	{
+	  "name": "Tomáš Holan",
+	  "homepage": "https://www.holan.dev"
+	}
+  ],
+  "require": {
+	"php": ">=7.4",
+	"slevomat/coding-standard": "^6.4"
+  },
+  "scripts": {
+	"cs": "phpcs --standard=vendor/holabs-crm/coding-standard/ruleset.xml --extensions=php --tab-width=4 -sp app bin",
+	"cs-fix": "phpcbf --standard=vendor/holabs-crm/coding-standard/ruleset.xml --extensions=php --tab-width=4 -sp app bin"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
